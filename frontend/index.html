@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Collection System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>
+            <i class="fa-solid fa-comments"></i>
+            Feedback Collection System
+        </h1>
+
+        <form id="feedbackForm">
+
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required>
+            </div>
+
+            <div class="input-group">
+                <label for="rating">Rating</label>
+
+                <select id="rating" required>
+                    <option value="">Choose Rating</option>
+                    <option value="1">⭐ 1 - Poor</option>
+                    <option value="2">⭐⭐ 2 - Fair</option>
+                    <option value="3">⭐⭐⭐ 3 - Good</option>
+                    <option value="4">⭐⭐⭐⭐ 4 - Very Good</option>
+                    <option value="5">⭐⭐⭐⭐⭐ 5 - Excellent</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="comments">Comments</label>
+                <textarea
+                    id="comments"
+                    rows="5"
+                    placeholder="Enter your feedback"
+                    required></textarea>
+            </div>
+
+            <button type="submit">
+                <i class="fa-solid fa-paper-plane"></i>
+                Submit Feedback
+            </button>
+
+        </form>
+
+        <div style="margin-top:20px;">
+
+            <button type="button" id="viewBtn">
+                View Feedback
+            </button>
+
+            <button
+                type="button"
+                onclick="window.location.href='login.html'"
+                style="margin-top:10px;">
+                Admin Login
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
