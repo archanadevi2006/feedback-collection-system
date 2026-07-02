@@ -134,12 +134,5 @@ async function loadSingleFeedback(id) {
 
 }
 
-// ----------------------
-// View Feedback Button
-// ----------------------
 
-document.getElementById("viewBtn").addEventListener("click", function () {
 
-    window.location.href = "admin.html";
-
-});
