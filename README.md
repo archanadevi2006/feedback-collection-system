@@ -29,8 +29,4 @@ node server.js
 
 Open the frontend using Live Server.
 
-## Default Admin
 
-Username: admin
-
-Password: admin123
